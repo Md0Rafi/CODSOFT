@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgb(226, 226, 91), rgb(215, 207, 121));
+    padding: 10px;
+}
+
+.todo_container {
+    width: 100%;
+    max-width: 570px;
+    background: #fff;
+    margin: 80px auto;
+    padding: 40px 30px 50px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 35px;
+}
+
+#todo-icon {
+    width: 2rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(189, 255, 189);
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-bottom: 1.5rem;
+}
+
+#input-box {
+    border: none;
+    outline: none;
+    width: 85%;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.row button {
+    border: none;
+    outline: none;
+    /* width: 8%; */
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: rgb(126, 255, 126);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.row button:hover {
+    background: rgb(93, 255, 93);
+}
+
+.row button:active {
+    background: rgb(126, 255, 126);
+}
+
+ul li {
+    list-style: none;
+    font-size: 1rem;
+    padding: 0.8rem 2.7rem;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-position: center;
+    background-size: cover;
+    top: 12px;
+    left: 10px;
+}
+
+li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 2.5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
