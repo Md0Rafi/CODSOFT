@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,400&family=Press+Start+2P&family=REM&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Portfolio - Mohamed Rafi</title>
+  </head>
+  <body>
+    <!-- ---------------home--------------- -->
+
+    <section class="home_section" id="home">
+      <div class="container">
+        <nav>
+          <h1>Mohamed R</h1>
+
+          <ul id="sideMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#internship">Internship</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark xicon" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars menuicon" onclick="openMenu()"></i>
+        </nav>
+
+        <div class="hero_title">
+          <h1>Hi, I am <span>Mohamed Rafi</span> <br />from Chennai</h1>
+          <p>Aspiring Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------about--------------- -->
+
+    <section class="about_section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="column1">
+            <img src="images/rafi2.jpg" alt="Author's image" />
+          </div>
+          <div class="column2">
+            <h1>About Me</h1>
+
+            <p>
+              Hi, I am Mohamed Rafi M, a final-year computer science student
+              with a fervent passion for technology and software. Aspiring
+              developer and a very keen and dedicated person towards continuous
+              learning and self-development. I am eager to contribute to
+              innovative projects. Thank you for visiting my portfolio and don't
+              hesitate to get in touch if you'd like to discuss and share ideas,
+              or just simply connect!
+            </p>
+
+            <div class="about_titles">
+              <p
+                class="about_links active_link"
+                onclick="openContent('skills')"
+              >
+                Skills
+              </p>
+              <p class="about_links" onclick="openContent('experience')">
+                Experience
+              </p>
+              <p class="about_links" onclick="openContent('education')">
+                Education
+              </p>
+            </div>
+
+            <div class="about_contents active_content" id="skills">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Python</li>
+              </ul>
+            </div>
+
+            <div class="about_contents" id="experience">
+              <ul>
+                <li>
+                  <span>Internship at Bharat Intern</span><br />
+                  Web development, <br />August 2023 - September 2023
+                </li>
+                <li>
+                  <span>Internship at Codsoft</span><br />
+                  JavaScript development, <br />January 2024 - February 2024
+                </li>
+              </ul>
+            </div>
+
+            <div class="about_contents" id="education">
+              <ul>
+                <li>
+                  <span>2021 - 2024</span><br />
+                  B.Sc., Computer Science, <br />The New College, Chennai
+                </li>
+                <li>
+                  <span>2021</span><br />
+                  HSC, <br />Dhanish Matriculation Higher Secondary School,
+                  Chennai
+                </li>
+                <li>
+                  <span>2019</span><br />
+                  SSLC, <br />Taha Convent Matriculation School, Chennai
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------internship--------------- -->
+
+    <section class="internship_section" id="internship">
+      <h1>Internship</h1>
+
+      <div class="internship_list">
+        <div>
+          <h2>Bharat Intern</h2>
+          <p>
+            At Bharat, I focussed on web development projects. I contributed to
+            various tasks which allowed me to enhance my skills in web
+            development.
+          </p>
+          <a
+            rel="noopener"
+            href="https://github.com/Md0Rafi/Bharat_Intern"
+            target="_blank"
+            >View Projects on Github</a
+          >
+        </div>
+
+        <div>
+          <h2>Codsoft</h2>
+          <p>
+            At Codsoft, I immersed myself in JavaScript development. Actively
+            participated in crafting dynamic and responsive applications.
+          </p>
+          <a
+            rel="noopener"
+            href="https://github.com/Md0Rafi/CODSOFT"
+            target="_blank"
+            >View Projects on Github</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------contact--------------- -->
+
+    <section class="contact_section" id="contact">
+      <div class="row">
+        <div class="contact_left">
+          <h1>Contact Me</h1>
+
+          <p><i class="fa-solid fa-envelope"></i> mohamedrafim01@gmail.com</p>
+
+          <p><i class="fa-solid fa-phone"></i> +91 9025168216</p>
+
+          <div class="social_icons">
+            <a
+              title="linkedIn"
+              rel="noopener"
+              href="https://www.linkedin.com/in/md0rafi"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a
+              title="Github"
+              rel="noopener"
+              href="https://www.github.com/Md0Rafi"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact_right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+
+            <textarea
+              name="Message"
+              rows="5"
+              placeholder="Leave Your Comments ..."
+            ></textarea>
+
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycby75m1XImd8j-e0GA8J-x8jwxbnH4YBygG-NvPjTeYnYswgQmzeS0E9nnOmhGcVBuQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            window.alert("Message sent");
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>

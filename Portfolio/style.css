@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),url(images/keyboard1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 3em 5em;
+}
+
+/* ---------------home--------------- */
+
+.home_section {
+    margin-bottom: 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav h1 {
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+nav h1::after {
+    content: 'afi.';
+    color: rgb(248, 214, 152);
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 1.5em;
+}
+
+nav ul li a {
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li  a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    border-radius: 5px;
+    background: grey;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.hero_title {
+    margin-top: 15%;
+}
+
+.hero_title h1 {
+    font-size: 3.5em;
+    font-weight: 400;
+}
+
+.hero_title h1 span {
+    color:rgb(249, 205, 123);
+}
+
+.hero_title p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+/* ---------------about--------------- */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #ababab;
+    padding: 40px 0;
+}
+
+.column1 {
+    flex-basis: 30%;
+}
+
+.column1 img {
+    width: 100%;
+    border-radius: 25px;
+    border: 3px solid whitesmoke;
+}
+
+.column2 {
+    flex-basis: 60%;
+}
+
+.column2 h1 {
+    font-size: 3em;
+    color: #fff;
+}
+
+.about_titles {
+    margin: 20px 0 40px;
+    color: #fff;
+    display: flex;
+}
+
+.about_links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+.about_links::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    border-radius: 5px;
+    background: rgb(249, 205, 123);
+    transition: 0.3s;
+}
+
+.about_links.active_link::after {
+    width: 100%;
+}
+
+.about_contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.about_contents ul li span {
+    color: rgb(249, 205, 123);
+}
+
+.about_contents {
+    display: none;
+}
+
+.about_contents.active_content {
+    display: block;
+}
+
+/* ---------------internship--------------- */
+
+.internship_section h1 {
+    font-size: 3em;
+    color: #fff;
+}
+
+.internship_section {
+    padding: 3em 5em;
+    margin: 50px 0;
+}
+
+.internship_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.internship_list div {
+    background: #262626;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 40px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.internship_list div h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.internship_list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.internship_list div:hover {
+    background: rgb(249, 205, 123);
+    transform: translateY(-10px);
+}
+
+/* ---------------contact--------------- */
+
+.contact_section {
+    padding: 3em 5em;
+    /* background: #000; */
+}
+
+.contact_left h1 {
+    font-size: 3em;
+    color: #fff;
+}
+
+.contact_left p {
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 25px;
+}
+
+.social_icons {
+    margin-top: 25px;
+}
+
+.social_icons a {
+    text-decoration: none;
+    color: #ababab;
+    margin-right: 15px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.social_icons a i {
+    font-size: 35px;
+}
+
+.social_icons a:hover {
+    color: rgb(249, 205, 123);
+    transform: translateY(-5px);
+}
+
+.contact_left p:hover {
+    color: rgb(249, 205, 123);
+    transform: translateY(-5px);
+}
+
+.btn {
+    display: inline-block;
+    background: rgb(249, 205, 123);
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background: rgb(255, 234, 196);
+}
+.contact_right form{
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/* ---------------media queries--------------- */
+
+.menuicon,
+.xicon {
+    display: none;
+}
+
+
+/* 1000PX */
+
+@media only screen and (max-width: 1000px) {
+    .menuicon,
+    .xicon {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: rgb(248, 214, 152);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: 0.5s ease;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .xicon {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
+
+/* 700PX */
+@media only screen and (max-width: 700px) {
+    .internship_section {
+        margin-top: 100px;
+    }
+}
+
+/* 600PX */
+
+@media only screen and (max-width: 630px) {
+    
+    /* Home */
+    .home_section {
+        margin-bottom: 0;
+    }
+    .container {
+        padding: 20px 60px;
+    }
+    nav h1 {
+        font-size: 35px;
+    }
+    .hero_title {
+        margin-top: 40%;
+    }
+    .hero_title h1 {
+        font-size: 35px;
+    }
+
+
+    /* About */
+    .column1 {
+        flex-basis: 100%;
+    }
+    .column2 h1 {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+    .column2 {
+        flex-basis: 100%;
+    }
+
+
+    /* Internship */
+    .internship_section {
+        margin-top: 600px;
+        padding: 20px 60px;
+    }
+
+
+    /* Contact */
+    .contact_left p {
+        font-size: 15px;
+    }
+    
+}
+
+
+/* 500PX */
+
+@media only screen and (max-width: 500px) {
+    .hero_title {
+        margin-top: 50%;
+    }
+
+    .home_section {
+        margin-bottom: 0;
+    }
+
+    .hero_title h1 {
+        font-size: 30px;
+    }
+}
+
+
+/* 430PX */
+
+@media only screen and (max-width: 430px) {
+    .hero_title {
+        margin-top: 50%;
+    }
+    .container nav h1 {
+        font-size: 20px;
+    }
+    .menuicon {
+        font-size: 20px;
+    }
+    .contact_left h1 {
+        font-size: 20px;
+    }
+    .column2 h1 {
+        font-size: 20px;
+    }
+    .internship_section h1 {
+        font-size: 20px;
+    }
+    .internship_section {
+        margin-top: 400px;
+    }
+}
