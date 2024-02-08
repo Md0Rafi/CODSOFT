@@ -14,3 +14,10 @@ Task 2: Portfolio :
     Code: https://github.com/Md0Rafi/CODSOFT/tree/main/Portfolio
 
     Site: https://Md0Rafi.github.io/CODSOFT/Portfolio/index.html
+
+
+Task 3: Digital Clock :
+
+    Code: https://github.com/Md0Rafi/CODSOFT/tree/main/DigitalClock
+
+    Site: https://Md0Rafi.github.io/CODSOFT/DigitalClock/index.html
